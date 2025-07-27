@@ -1,21 +1,10 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { Colors } from "react-native/Libraries/NewAppScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import Navigation from "./components/Navigations";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Thawatchai Chintrakul DBT102</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Navigation />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#FFFFFF",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
