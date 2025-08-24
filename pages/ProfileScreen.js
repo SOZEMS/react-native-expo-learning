@@ -1,14 +1,15 @@
-import { View, Text, Button } from "react-native";
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
-export default function ProfileScreen({ navigation }) {
+export default function ProfileScreen() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Thawatchai Chintrakul DBT103</Text>
-      <Button title="Go to Home" onPress={() => navigation.navigate("Home")} />
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate("Details")}
-      />
+    <View style={styles.container}>
+      <Text style={styles.text}>Welcome to ProfileScreen 🎉</Text>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: { flex: 1, justifyContent: "center", alignItems: "center" },
+  text: { fontSize: 20 },
+});
