@@ -7,10 +7,10 @@ export default function LoginScreen({ navigation }) {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    if (username === "user" && password === "password") {
+    if (username === "SOZEMS" && password === "0624796711mark") {
       try {
         // เก็บ Token ลง AsyncStorage
-        await AsyncStorage.setItem("token", "sampleToken");
+        await AsyncStorage.setItem("username", "username");
         // ไปหน้า Profile
         navigation.navigate("Profile");
       } catch (error) {
